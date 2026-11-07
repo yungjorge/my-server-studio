@@ -1,35 +1,27 @@
 # Lesson 01 · Conversation evidence
 
-AI-drafted task summary, not a transcript or grade. It may be public. Use actual
-short quotes or labeled paraphrases, name any help supplied, and link actual
-work. Leave missing contributions Pending. A learner can review, correct or
-remove excerpts before publication; accuracy approval is not proof of learning.
-Label role-play honestly rather than treating it as an actual learner response.
-
-**Lesson:** STUDIO-001. **Available conversation context:** Not recorded yet.
+AI-drafted summary for STUDIO-001. Learner statements are quoted or paraphrased below.
 
 ## Prediction
 
-Pending.
+> DNS points the calculator hostname to my DigitalOcean server. Traefik terminates HTTPS and routes traffic over the existing Docker network to the calculator container.
 
 ## Check interpretation
 
-Pending.
+Learner paraphrase: HTTP 400 shows the divide-by-zero request was rejected. It does not establish that all invalid inputs are handled or that all functionality works.
 
 ## Browser observation
 
-Pending.
+Pending. The learner did not personally test 6 × 7 in the deployed calculator. Automated API and browser results are separate from this observation.
 
 ## Keep decision
 
-Pending.
+Learner paraphrase: Keep the deployed calculator based on the verified automated checks, with the personal browser test still pending.
+
+## AI assistance
+
+AI prepared and ran the deployment, verified HTTPS and API behavior, checked that existing services stayed healthy, and drafted this summary from the learner’s statements. See [launch evidence](studio/evidence.json) and [passing PR CI](https://github.com/yungjorge/my-server-studio/actions/runs/42335741107).
 
 ## Review
 
-Pending.
-
-## AI work and next step
-
-No learner trial recorded. Confirm the student's clone and SSH origin, then
-start the prepared setup. Link SPEC, actual issue/PR and sanitized evidence as
-they become available; do not fabricate missing earlier conversation.
+The learner reviewed and approved this summary for publication on November 6, 2026.

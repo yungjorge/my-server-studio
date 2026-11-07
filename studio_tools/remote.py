@@ -154,6 +154,7 @@ def compose_model(config, release):
                 "traefik.docker.network": config["network"],
                 f"traefik.http.routers.{router}.rule": f"Host(`{hostname}`)",
                 f"traefik.http.routers.{router}.entrypoints": "websecure",
+                f"traefik.http.routers.{router}.tls.certresolver": "le",
                 f"traefik.http.routers.{router}.service": router,
                 f"traefik.http.services.{router}.loadbalancer.server.port": "8000",
             }
