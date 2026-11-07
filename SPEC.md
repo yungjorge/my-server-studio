@@ -2,7 +2,7 @@
 
 ## STUDIO-001 · Launch a tested calculator on an existing server
 
-**Status:** Pending learner scope agreement and actual evidence.
+**Status:** New launch verified; CI and learner review pending.
 **Next step:** Confirm your clone with the coach, then follow [Lesson 01](studio/lesson-01.md).
 **Instructor implementation:** [issue #9](https://github.com/kaw393939/373_hosting/issues/9).
 Create your own issue from the [lesson template](.github/ISSUE_TEMPLATE/studio-calculator.md).
@@ -18,10 +18,10 @@ An explicitly agreed adoption of a matching existing deployment is recorded
 as adoption, not a fresh launch. This bounded lesson does not certify the whole
 server baseline or a vulnerability-free image.
 
-- **Public hostname:** Pending.
-- **New launch or adopted deployment, and reason:** Pending.
-- **Own issue / feature branch:** Pending.
-- **Agreed scope or actual access/configuration gap:** Pending.
+- **Public hostname:** https://calc.104-248-208-29.nip.io
+- **New launch or adopted deployment, and reason:** New launch; doctor found no conflicting route.
+- **Own issue / feature branch:** [#1](https://github.com/yungjorge/my-server-studio/issues/1) / codex/studio-001.
+- **Agreed scope:** One pinned image on the existing is373-qa proxy network, using the existing le resolver. No proxy changes or public container port.
 
 Private SSH targets and configuration stay in ignored local state. Share only
 reviewed, selected evidence; never commit credentials or raw server output.
@@ -30,9 +30,9 @@ reviewed, selected evidence; never commit credentials or raw server output.
 
 | Evidence | Actual result / link |
 |---|---|
-| Prepared Black/Pylint/pytest and real-image browser checks | Not run; full local E2E needs local Docker or actual CI evidence |
-| Hosted image/commit, trusted HTTPS, valid and rejected API cases | Not verified; export selected evidence with `report` |
-| Preservation of unrelated services | Not verified |
+| Prepared Black/Pylint/pytest and real-image browser checks | Black, Pylint and 91 tests passed locally; browser E2E pending PR CI |
+| Hosted image/commit, trusted HTTPS, valid and rejected API cases | [Launch evidence](studio/evidence.json): trusted HTTPS, matching image and commit, 6 × 7 = 42 (200), division by zero (400), numeric string rejected (422). |
+| Preservation of unrelated services | All three existing containers unchanged; QA and production health returned OK after launch. |
 | Own prediction, check interpretation, browser observation and keep/revise reason | [LEARNING.md](LEARNING.md), Pending; disclose assistance |
 | Accuracy review before publishing learner excerpts | Pending |
 | Actual PR, latest CI, merge and issue closure | Pending |
