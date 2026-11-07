@@ -2,7 +2,7 @@
 
 ## STUDIO-001 · Launch a tested calculator on an existing server
 
-**Status:** New launch verified; CI and learner review pending.
+**Status:** New launch verified; full PR CI passed for the implementation commit. Learner review pending.
 **Next step:** Confirm your clone with the coach, then follow [Lesson 01](studio/lesson-01.md).
 **Instructor implementation:** [issue #9](https://github.com/kaw393939/373_hosting/issues/9).
 Create your own issue from the [lesson template](.github/ISSUE_TEMPLATE/studio-calculator.md).
@@ -30,12 +30,12 @@ reviewed, selected evidence; never commit credentials or raw server output.
 
 | Evidence | Actual result / link |
 |---|---|
-| Prepared Black/Pylint/pytest and real-image browser checks | Black, Pylint and 91 tests passed locally; browser E2E pending PR CI |
+| Prepared Black/Pylint/pytest and real-image browser checks | Black, Pylint and 91 tests passed locally; browser E2E passed in [PR CI](https://github.com/yungjorge/my-server-studio/actions/runs/42335741107) for implementation commit 70122bf |
 | Hosted image/commit, trusted HTTPS, valid and rejected API cases | [Launch evidence](studio/evidence.json): trusted HTTPS, matching image and commit, 6 × 7 = 42 (200), division by zero (400), numeric string rejected (422). |
 | Preservation of unrelated services | All three existing containers unchanged; QA and production health returned OK after launch. |
 | Own prediction, check interpretation, browser observation and keep/revise reason | [LEARNING.md](LEARNING.md), Pending; disclose assistance |
 | Accuracy review before publishing learner excerpts | Pending |
-| Actual PR, latest CI, merge and issue closure | Pending |
+| Actual PR, CI, merge and issue closure | [PR #2](https://github.com/yungjorge/my-server-studio/pull/2); [passing implementation CI](https://github.com/yungjorge/my-server-studio/actions/runs/42335741107); merge and issue closure pending |
 
 Link the exported `studio/evidence.json`, actual CI and issue/PR when available.
 CI does not deploy this server. A fixture, green check, timestamp, closed issue
